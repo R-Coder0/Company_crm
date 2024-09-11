@@ -45,19 +45,20 @@ This project is a **Customer Relationship Management (CRM) system** built using 
    cd your-crm-repo
 2. Install dependencies for both the frontend and backend:
 
-bash
-# Install backend dependencies
-cd crm-backend
-npm install
+   ```bash
+   # Install backend dependencies
+     cd crm-backend
+     npm install
 
-# Install frontend dependencies
-cd ../crm-admin-dashboard
-npm install
-
+   # Install frontend dependencies
+     cd ../crm-admin-dashboard
+     npm install
+ 
 3. Create a .env file in the crm-backend directory and configure your environment variables:
 
-JWT_SECRET=your_jwt_secret
-MONGO_URI=your_mongodb_uri
+   ```bash
+   JWT_SECRET=your_jwt_secret
+   MONGO_URI=your_mongodb_uri
 
 4. Start the development servers:
 
