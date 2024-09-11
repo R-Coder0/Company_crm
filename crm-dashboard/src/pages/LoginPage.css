@@ -1,0 +1,144 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  background: #001f3f;
+}
+
+.login-page {
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+}
+
+.login-left {
+  flex: 2;
+  background: url('../assets/Company.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 20px;
+}
+
+.branding-logo img {
+  width: 150px;
+}
+
+.login-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f7fa;
+  padding: 20px;
+}
+
+.login-form-container {
+  background: #dae1ec;
+  padding: 40px;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.login-logo img {
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+.login-title {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 95%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.remember-me {
+  margin: 10px 0;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.login-btn:hover {
+  background-color: #0056b3;
+}
+
+.login-error {
+  margin-top: 20px;
+  color: red;
+}
+
+@media (max-width: 768px) {
+  .login-page {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .login-left {
+    display: none; /* Hide the left section on smaller screens */
+  }
+
+  .login-right {
+    width: 100%;
+    padding: 0;
+  }
+
+  .login-form-container {
+    width: 100%;
+    max-width: 350px; /* Adjust for mobile */
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .login-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-form-container {
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .login-title {
+    font-size: 20px;
+  }
+
+  input[type="email"],
+  input[type="password"] {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .login-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
