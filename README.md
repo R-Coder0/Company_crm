@@ -62,13 +62,14 @@ This project is a **Customer Relationship Management (CRM) system** built using 
 
 4. Start the development servers:
 
-# Start backend server
-cd crm-backend
-npm start
+   ```bash
+   # Start backend server
+   cd crm-backend
+   npm start
 
-# Start frontend server
-cd ../crm-admin-dashboard
-npm start
+   # Start frontend server
+   cd ../crm-admin-dashboard
+   npm start
 
 5. Open your browser and navigate to http://localhost:3000 to access the application.
 
